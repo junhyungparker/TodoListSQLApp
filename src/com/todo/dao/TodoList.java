@@ -37,9 +37,9 @@ public class TodoList {
 
 	public void listAll() {
 		System.out.println("\n"
-				+ "inside list_All method\n");
+				+ "[전체 목록]");
 		for (TodoItem myitem : list) {
-			System.out.println(myitem.getTitle() + myitem.getDesc());
+			System.out.println("[" + myitem.getTitle() + "] " + myitem.getDesc());
 		}
 	}
 	
