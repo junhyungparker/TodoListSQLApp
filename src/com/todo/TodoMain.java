@@ -1,6 +1,7 @@
 package com.todo;
 
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 import com.todo.dao.TodoList;
 import com.todo.menu.Menu;
@@ -19,7 +20,9 @@ public class TodoMain {
 		do { 
 			Menu.prompt();
 			isList = false;
-			String choice = sc.next();
+			String command = sc.nextLine();
+			StringTokenizer stk = new StringTokenizer(command," ");
+			String choice = stk.nextToken();
 			switch (choice) {
 
 			case "help":
@@ -60,6 +63,10 @@ public class TodoMain {
 				System.out.println("\n날짜순으로 정렬하였습니다. ");
 				break;
 
+			case "find":
+				String key = stk.nextToken();
+				TodoUtil.findItem(l, key);
+				break;
 			case "exit":
 				quit = true;
 				break;

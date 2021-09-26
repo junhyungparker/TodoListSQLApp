@@ -12,7 +12,8 @@ public class Menu {
         System.out.println("5. ls_name_asc: 제목순 정렬");
         System.out.println("6. ls_name_desc: 제목역순 정렬");
         System.out.println("7. ls_date: 날짜순 정렬");
-        System.out.println("8. exit: 프로그램 종료");
+        System.out.println("8. find <키워드>: 문자열 검색");
+        System.out.println("9. exit: 프로그램 종료");
         System.out.println();
     }
     
