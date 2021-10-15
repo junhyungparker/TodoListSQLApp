@@ -15,7 +15,7 @@ public class TodoMain {
 		TodoList l = new TodoList();
 		boolean isList = false;
 		boolean quit = false;
-		TodoUtil.loadList(l, "todolist.txt");
+		l.importData("todolist.txt");
 		Menu.displaymenu();
 		do { 
 			Menu.prompt();
